@@ -16,16 +16,16 @@ RESET='\033[0m'
 if [ ! -t 1 ]; then RED=''; YELLOW=''; GREEN=''; BOLD=''; RESET=''; fi
 
 error_exit() {
-  printf "${RED}Error: %s${RESET}\n" "$1" >&2
+  printf "${RED}Error: %b${RESET}\n" "$1" >&2
   exit 1
 }
 
 warn() {
-  printf "${YELLOW}${BOLD}⚠️${RESET} %s\n" "$1" >&2
+  printf "${YELLOW}${BOLD}⚠️${RESET} %b\n" "$1" >&2
 }
 
 info() {
-  printf "${GREEN}${BOLD}✓${RESET} %s\n" "$1"
+  printf "${GREEN}${BOLD}✓${RESET} %b\n" "$1"
 }
 
 check_downloader() {

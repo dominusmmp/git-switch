@@ -10,7 +10,7 @@ RESET='\033[0m'
 if [ ! -t 1 ]; then RED=''; GREEN=''; BOLD=''; RESET=''; fi
 
 error_exit() {
-  printf "${RED}Error: %s${RESET}\n" "$1" >&2
+  printf "${RED}Error: %b${RESET}\n" "$1" >&2
   exit 1
 }
 
