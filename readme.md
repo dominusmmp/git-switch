@@ -18,13 +18,13 @@ Run one of the following commands to download and execute the installer:
 Using `curl`:
 
 ```bash
-curl -fsSL https://git.new/gitswitch | bash
+/bin/bash -c "$(curl -fsSL https://github.com/dominusmmp/git-switch/raw/master/install.sh)"
 ```
 
 Using `wget`:
 
 ```bash
-wget -qO- https://git.new/gitswitch | bash
+/bin/bash -c "$(wget -qO- https://github.com/dominusmmp/git-switch/raw/master/install.sh)"
 ```
 
 This installs `gitswitch` to `/usr/local/bin` or `$HOME/.local/bin` and sets up dependencies (`gh`, `jq`).
@@ -36,13 +36,13 @@ In case the automatic installer fails:
 1. **Download the script**:
 
    ```bash
-   curl -fsSL "https://git.new/git-switch" -o gitswitch.sh
+   curl -fsSL "https://github.com/dominusmmp/git-switch/raw/master/gitswitch.sh" -o gitswitch.sh
    ```
 
    or
 
    ```bash
-   wget -qO gitswitch.sh "https://git.new/git-switch"
+   wget -qO gitswitch.sh "https://github.com/dominusmmp/git-switch/raw/master/gitswitch.sh"
    ```
 
 2. **Make it executable**:

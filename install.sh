@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SCRIPT_NAME="gitswitch"
-REPO_URL="https://git.new/git-switch"
+REPO_URL="https://github.com/dominusmmp/git-switch/raw/master/gitswitch.sh"
 INSTALL_DIR="/usr/local/bin"
 FALLBACK_INSTALL_DIR="$HOME/.local/bin"
 
